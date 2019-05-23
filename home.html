@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wordcount</title>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+  
+<center>
+    <h1>wordcount</h1>
+    <!-- 페이지 설명(about링크) -->
+    <!-- 글씨를 받을 수 있는 form태그 -->
+    <!-- 숫자를 세주는 count로 갈 수 있는 링크  -->
+    
+    <a href="{% url 'about' %}">ABOOUT</a>
+    
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="10" name="fulltext"></textarea>
+        <br>
+        <input type="submit" value="COUNT!"/>
+    </form>
+    <div id="bg">
+            <img src="https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_1280.jpg" alt="">
+        </div>
+    <style>
+    h1 {
+    color: 	 #39c0ff98;
+    font-size: 4rem;
+    }
+    #bg {
+    position: fixed; 
+    top: -30%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    }
+  #bg img {
+    
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    opacity: 0.3;
+    }
+    
+    </style> 
+</center>
+    
+
+</body>
+</html>
+
+
